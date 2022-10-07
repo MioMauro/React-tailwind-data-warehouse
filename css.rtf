@@ -1,14 +1,18 @@
 {\rtf1}
 <header className='mb-12 lg:mb-0 z-20 relative px-4 lg:px-0'>
 <section className='lg:h-[900px] py-12'>
+<section className='my-[30px] xl:mt-[100px]'>
 <h1 className='h1 xl:max-w-[700px] mb-6 xl:mb-12'>{title}</h1>
+<h2 className='h2 mb-10'>{title}</h2>
 <p className='lead xl:max-w-[380px] mb-6 lg:mb-12'>{subtitle}</p>
+<p className='max-w-[474px] mx-auto xl:mx-0'>{subtitle}</p>
 <div className='container mx-auto bg-pink-100 h-full relative'>
 <div className='bg-pink-200 flex items-center justify-between'>
 <div className='flex flex-col xl:flex-row items-center h-full md:py-24 '>
 <div className='text-center xl:text-left xl:absolute'>
 <div className='flex items-center gap-x-[110px]'>
 <div className='flex items-center justify-between relative'>
+<div className='flex-1 xl:pr-12'> (div titolo e sottotitolo)
 <ul className='flex flex-col px-6 py-8 gap-y-4'>
 <ul className='flex gap-x-8'> (link navbar)
       <li key={index}>
@@ -18,14 +22,44 @@
 <button className='btn btn-primary mb-8 xl:mb-0'>
 <button className='btn btn-quaternary flex items-center gap-x-[20px] group'> 
 
+----
+
     <header className='mb-12 lg:mb-0 z-20 relative px-4 lg:px-0' 
     data-aos ='fade-down'
     data-aos-delay ='1200'
     data-aos-duration ='1000'>
 
+    -----
 
+ <section>
+    <div className='container mx-auto'>Abuot</div>
+  </section>  
 
+------ 
 
+      <div className='flex-1'>
+      <img src={image} alt='images' />
+    </div>
+----------------------------------------------------------------
+                  ON/OFF section visibility
+
+<section className='my-[30px] xl:mt-[100px]' 
+      data-aos='fade-up' data-aos-offset='350'>
+      
+                  EFFETTO SULL'IMMAGINE
+
+<div className='flex-1' data-aos='zoom-in-left'>
+      <img src={image} alt='images' />
+    </div>
+
+                  EFFETTO SUL TESTO
+
+    <h2 className='h2 mb-10' data-aos='fade-up' data-aos-delay='300'>{title}
+    </h2>
+      <p className='max-w-[474px] mx-auto xl:mx-0' 
+      data-aos='fade-up' data-aos-delay='300'>{subtitle}
+      </p>
+-----------------------------------------------------------------------
 ----------------------------------------------------------------------
       {/* button */}
       <button>Request Demo <BsArrowRight /> </button>
@@ -112,3 +146,10 @@ const Nav = () => {
    
 };
 ----------------------------------------------------
+CONTAINER IMMAGINE, TESTO (CARD) 
+
+<div className='bg-accent-secondary/[15%] rounded-[50px] min-h-[560px] px-12 pb-12 
+                      flex flex-col text-center xl:flex-row xl:items-center
+                      xl:text-left xl:gap-x-[60px] xl:pb-0'>
+
+                      ----------------------------------------------------
