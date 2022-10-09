@@ -4,6 +4,7 @@
 <section className='my-[75px] xl:my-[150px] border-t-2'>
 <section className='my-[70px] xl:my-[150px]'>
 <section className='my-[30px] xl:mt-[100px]'>
+<img className='mb-[65px]' src={logo} alt='imag' />
 <h1 className='h1 xl:max-w-[700px] mb-6 xl:mb-12'>{title}</h1>
 <h2 className='h2 mb-10'>{title}</h2>
 <h2 className='h2 mb-5'>{title}</h2>
@@ -11,10 +12,15 @@
 <p className='lead xl:max-w-[380px] mb-6 lg:mb-12'>{subtitle}</p>
 <p className='max-w-[474px] mx-auto xl:mx-0'>{subtitle}</p>
 <p className='lead'>{subtitle}</p>
+<a className='text-white text-xl hover:text-white' href={item.href}>{item.icon}</a>
 <a className='text-primary font-bold' href=''>{linkText}</a>
 <div className='w-full max-w-[530px] h-[358px] flex flex-col items-center justify-center xl:flex-row xl:justify-start mx-auto relative' key={index}>
 <div className='bg-pink-200 flex items-center justify-between'>
 <div className='py-12 xl:py-24 text-center xl:text-left'>
+<div className='flex flex-1 flex-col gap-y-14 xl:flex-row justify-between'>
+<div className='flex flex-col xl:flex-row text-center xl:text-left gap-y-12'>
+<div className='w-[45%] mx-auto flex flex-col items-center xl:items-start'>
+
 
       <div className='text-center'>
         <h2 className='h2 mb-6 xl:mb-12'>{title}</h2>
@@ -25,6 +31,8 @@
 <div className='h-[2000px]'></div>
 <div className='flex flex-col xl:flex-row justify-between items-center'>
 <div className='flex flex-col justify-center px-2 xl:px-0 h-[800px]'>
+<div className='max-w-[260px] mb-5 text-primary font-bold'>{address}</div>
+
 
 
                     Container e div della sezione
@@ -38,17 +46,26 @@
 <div className='flex flex-col xl:flex-row items-center h-full md:py-24 '>
 <div className='text-center xl:text-left xl:absolute'>
 <div className='flex items-center gap-x-2'>
+<div className='font-extrabold text-primary mb-8'>About</div>
+
                       {/* icon image */}
               <div className='max-w-[120px] xl:mr-7 xl:max-w-[232px]'>
                 <img src={image} alt='imag' />
-              </div>        
+              </div> 
+
 <div className='w-full bg-pink-50 max-w-[530px] h-[358px] relative'
 <div className='text-lg text-primary font-bold'>{name}</div>
 <div className='mb-4 font-semibold text-accent-primary'>{web}</div>
 <div className='flex items-center gap-x-[110px]'>
+<div>{address}</div>
+<div>{email}</div>
+<div>{phone}</div>
+
+
        <div className='hidden xl:flex absolute top-0 right-0 -z-10'>
          <img src={bgImage} alt='bgImage' />
        </div>
+
 <div className='container mx-auto'>
 <div className='flex items-center justify-between relative'>
 <div className='flex-1 xl:pr-12'> (div titolo e sottotitolo)
@@ -62,11 +79,22 @@
                   <BsArrowRight />
                 </div>
               </div>
+
+<ul className='flex flex-col gap-y-4'>
 <ul className='flex flex-col px-6 py-8 gap-y-4'>
 <ul className='flex gap-x-8'> (link navbar)
+<ul className='flex gap-4 justify-center'>
+
+      <li key={index}>
+                  <a className='text-primary' href={item.href}>{item.name}</a> (footer)
+                  </li>
+
       <li key={index}>
         <a className='text-white' href={item.href}>{item.name}</a>
       </li>
+
+<li className='w-12 h-12 bg-primary/10 flex ' key={index}>
+<li className='w-12 h-12 bg-primary/10 flex justify-center items-center rounded-full cursor-pointer hover:bg-accent-secondary transition-all' key={index}> (icons)      
 
 <button className='btn btn-primary mb-8 xl:mb-0'>
 <button className='btn btn-quaternary flex items-center gap-x-[20px]'>
